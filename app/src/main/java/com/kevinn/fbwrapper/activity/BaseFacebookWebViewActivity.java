@@ -85,8 +85,9 @@ public abstract class BaseFacebookWebViewActivity extends Activity implements
     protected final static String INIT_URL_DESKTOP = "https://www.neogaf.com";
     // protected final static String INIT_URL_FACEBOOK_ZERO = "https://0.facebook.com";
     // protected final static String INIT_URL_FACEBOOK_ONION = "https://facebookcorewwwi.onion";
-    protected final static String URL_PAGE_NOTIFICATIONS = "/notifications.php";
-    protected final static String URL_PAGE_MESSAGES = "/messages";
+    // protected final static String URL_PAGE_NOTIFICATIONS = "/notifications.php";
+    // protected final static String URL_PAGE_MESSAGES = "/messages";
+    protected final static String URL_SUBSCRIPTIONS = "/subscribed.php";
 
     // URL for Sharing Links
     // u = url & t = title

@@ -120,7 +120,7 @@ public class FbWrapper extends BaseFacebookWebViewActivity {
 
         if (loadInitialPage) {
             // Load the URL depending on the type of device or preference
-            Logger.d(LOG_TAG, "Loading the init Facebook URL");
+            Logger.d(LOG_TAG, "Loading the init NeoGAF URL");
             loadNewPage(mDomainToUse);
         }
 
@@ -160,6 +160,7 @@ public class FbWrapper extends BaseFacebookWebViewActivity {
         // findViewById(R.id.menu_item_newsfeed).setOnClickListener(buttonsListener);
         // findViewById(R.id.menu_items_notifications).setOnClickListener(buttonsListener);
         // findViewById(R.id.menu_item_messages).setOnClickListener(buttonsListener);
+        findViewById(R.id.menu_item_subscriptions).setOnClickListener(buttonsListener);
         findViewById(R.id.menu_share_this).setOnClickListener(buttonsListener);
         findViewById(R.id.menu_preferences).setOnClickListener(buttonsListener);
         findViewById(R.id.menu_about).setOnClickListener(buttonsListener);
@@ -366,6 +367,9 @@ public class FbWrapper extends BaseFacebookWebViewActivity {
                     break;
                 case R.id.menu_item_refresh:
                     refreshCurrentPage();
+                    break;
+                case R.id.menu_item_subscriptions:
+                    loadNewPage(mDomainToUse + URL_SUBSCRIPTIONS);
                     break;
                 // case R.id.menu_item_newsfeed:
                 //     loadNewPage(mDomainToUse);
